@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from .models import Question, Category
 import random
+import numpy as np
 # Create your views here.
 
 category_dict = {
