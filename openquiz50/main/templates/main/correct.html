@@ -1,0 +1,16 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+
+<div class="container-play">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <h1 class="text-center mb-5 white-text">You are CORRECT  <i class="fa-solid fa-check"></i></h1>
+      <div class="d-grid gap-2">
+        <a href="/play/room/{{room_code}}" class="btn btn-primary top-padding-small">Continue</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

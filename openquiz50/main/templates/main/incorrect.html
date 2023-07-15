@@ -1,0 +1,17 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+
+<div class="container-play">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <h1 class="text-center mb-5 white-text">You are INCORRECT  <i class="fa-solid fa-circle-xmark"></i></h1>
+      <div class="mb-3 text-center white-text medium-text-size">The correct answer is {{answer}}</div>
+      <div class="d-grid gap-2">
+        <a href="/play/room/{{room_code}}" class="btn btn-primary top-padding-small">Continue</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

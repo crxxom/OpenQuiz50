@@ -1,0 +1,74 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+	<div class="room-container">
+	    <div class="ready">Ready</div>
+	    <div class="set">Set</div>
+	    <div class="go">Go!</div>
+	</div>
+
+	<div class="other-content hidden">
+	  <div class="row justify-content-center align-items-center">
+	    <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="top-padding-small white-text question text-center">Score: {{score}}</div>
+
+	      <form method="POST" class="form-container">
+	        {% csrf_token %}
+	        <div class="mb-3">
+	          <div class="question text-center mb-5 h1-form">{{ Question }}</div>
+	          <div class="input-group">
+	            <input type="text" class="form-control" placeholder="Enter the answer" aria-label="Enter the answer" name="submit_answer" autocomplete="off" required>
+	          </div>
+	          <div class="d-grid mt-3">
+	            <button class="btn btn-primary" type="submit" name="submit" value="submit">Submit</button>
+	          </div>
+	        </div>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+
+  
+
+  <script>
+    // Get the text elements
+    var ready = document.querySelector('.ready');
+    var set = document.querySelector('.set');
+    var go = document.querySelector('.go');
+
+
+    // Show each text element in sequence
+    setTimeout(function() {
+      ready.classList.add('show-ready');
+    }, 500);
+
+    setTimeout(function() {
+      ready.classList.remove('show-ready');
+    }, 1500);
+
+    setTimeout(function() {
+      set.classList.add('show-set');
+    }, 2000);
+
+    setTimeout(function() {
+      set.classList.remove('show-set');
+    }, 3000);
+
+    setTimeout(function() {
+      go.classList.add('show-go');
+    }, 3500);
+
+    setTimeout(function() {
+      go.classList.remove('show-go');
+    }, 4500);
+
+    setTimeout(function() {
+      var other_content = document.querySelector('.other-content')
+      other_content.classList.remove('hidden');
+      other_content.classList.add('show-content')
+    }, 5000);
+  </script>
+{% endblock %}
+
+
+

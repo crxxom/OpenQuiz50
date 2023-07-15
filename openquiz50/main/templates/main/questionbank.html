@@ -1,0 +1,39 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+	<style>
+	  .category-title {
+	    font-family: 'Open Sans', sans-serif;
+	    font-size: 3rem;
+	    font-weight: bold;
+	    margin-top: 50px;
+	    margin-bottom: 30px;
+	    text-transform: uppercase;
+	    color: #fff;
+	    letter-spacing: 5px;
+	    border-bottom: 3px solid #fff;
+	    display: inline-block;
+	    padding-bottom: 10px;
+	    text-shadow: 2px 2px 0 #000;
+	    text-align: center;
+	    width: 100%;
+	  }
+	</style>
+  <div class="container">
+    <h1 class="text-center category-title">{{ category }}</h1>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-8">
+        {% for question in questions %}
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">{{ question.question }}</h5>
+              <p class="card-text">{{ question.answer }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+

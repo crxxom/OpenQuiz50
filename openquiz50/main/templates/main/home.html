@@ -1,0 +1,57 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+<div class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="h1-hero">Test Your Knowledge</h1>
+        <p class="p-hero">Take a quiz on a wide range of topics and see how you perform!</p>
+        <a href="/play" class="btn btn-primary">Take a Quiz</a>
+      </div>
+      <div class="col-md-6 d-none d-md-block">
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <h2 class="h2-section">Popular Categories</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          
+          <h5 class="card-title">Mathematics  <i class="fa-solid fa-shapes"></i></h5>
+          <p class="card-text">Test your math skills with a variety of quizzes on topics ranging from algebra to geometry.</p>
+          <a href="/play" class="btn btn-primary">Start</a>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+        
+          <h5 class="card-title">Science  <i class="fa-solid fa-seedling"></i></h5>
+          <p class="card-text">Explore the mysteries of the natural world with quizzes on biology, chemistry, and physics.</p>
+          <a href="/play" class="btn btn-primary">Start</a>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          
+          <h5 class="card-title">Sports  <i class="fa-solid fa-person-running"></i></h5>
+          <p class="card-text">From football to cricket, how much of a sport nerd are you?</p>
+          <a href="/play" class="btn btn-primary">Start</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

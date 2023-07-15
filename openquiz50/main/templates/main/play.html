@@ -1,0 +1,37 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+	<div class="container-play justify-content-center h-100 align-items-center">
+	  <h1 class="text-center mb-5 h1-form">Choose a category</h1>
+	  <div class="row justify-content-center">
+	    <div class="col-sm-6 col-md-4">
+	      <form method="post" action='#'>
+	        {% csrf_token %}
+	        <div class="mb-3">
+	          <select class="form-select" id="autoSizingSelect" name="category" required>
+	            <option selected disabled>Choose a category...</option>
+	            <option value="Arts & Literature">Arts & Literature</option>
+	            <option value="Mathematics">Mathematics</option>
+	            <option value="Science">Science</option>
+	            <option value="Geography">Geography</option>
+	            <option value="History">History</option>
+	            <option value="Technology">Technology</option>
+	            <option value="Music">Music</option>
+	            <option value="Sports">Sports</option>
+	            <option value="Entertainment">Entertainment</option>
+	            <option value="Food">Food</option>
+	            <option value="Others">Others</option>
+	          </select>
+	        </div>
+	        <div class="d-grid gap-2">
+	          <button class="btn btn-primary" type="submit" name="start" value="start">Start</button>
+	        </div>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+{% endblock %}
+
+
+
+

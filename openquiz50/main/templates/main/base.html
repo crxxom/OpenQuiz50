@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/39c1afb4dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+ 	<title>{% block title %}{% endblock %}</title>
+</head>
+
+
+<body id="bg" style="background-image:url('{% static "main/images/bg1.jpeg" %}');">
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="/">OpenQuiz50</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="/play">Play</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="/create">Contribute</a>
+	        </li>
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            Question Bank
+	          </a>
+	          <ul class="dropdown-menu">
+	          	<li><a class="dropdown-item" href="/questionbank/Arts & Literature">Arts & Literature</a></li>
+	            <li><a class="dropdown-item" href="/questionbank/Mathematics">Mathematics</a></li>
+	            <li><a class="dropdown-item" href="/questionbank/Science">Science</a></li>
+	            <li><a class="dropdown-item" href="/questionbank/Geography">Geography</a></li>
+	           	<li><a class="dropdown-item" href="/questionbank/History">History</a></li>
+	           	<li><a class="dropdown-item" href="/questionbank/Technology">Technology</a></li>
+	            <li><a class="dropdown-item" href="/questionbank/Music">Music</a></li>
+	            <li><a class="dropdown-item" href="/questionbank/Sports">Sports</a></li>
+	            <li><a class="dropdown-item" href="/questionbank/Entertainment">Entertainment</a></li>
+	           	<li><a class="dropdown-item" href="/questionbank/Food">Food</a></li>
+	           	<li><a class="dropdown-item" href="/questionbank/Others">Others</a></li>
+
+	          </ul>
+	        </li>
+	        
+	      </ul>
+	      <!-- the 'search_result' correspond to the name of the url in urls.py -->
+	      <form class="d-flex" role="search" action="{% url 'search_result' %}"> 
+	        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name='query' autocomplete="off">
+	        <button class="btn btn-outline-success" type="submit">Search</button>
+	      </form>
+	    </div>
+	  </div>
+	</nav>
+
+	<div id="content" name="content" class="main">
+		
+		{% block content %}
+		{% endblock %}
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+.h1-form {
+	color: white;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  border-radius: 0;
+}
+
+.h1-form {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.form-select {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  border-radius: 0;
+}
+
+.form-control {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #495057;
+  background-color: #fff;
+  border-color: #ced4da;
+  border-radius: 0;
+}
+
+.btn-primary {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 0;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.container {
+  padding: 8rem 0;
+/*  background-color: #f8f9fa;*/
+}
+
+.room-container {
+  padding: 3.5rem 0;
+/*  background-color: #f8f9fa;*/
+}
+
+.container-play {
+  padding-top: 30vh;
+/*  background-color: #f8f9fa;*/
+
+}
+
+.card-body {
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.form-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #495057;
+}
+
+.form-select:focus, .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+select.form-select:invalid {
+  color: #6c757d;
+}
+
+select.form-select:invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+input.form-control:invalid {
+  color: #6c757d;
+}
+
+input.form-control:invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+@media (max-width: 575.98px) {
+  .h1-form {
+    font-size: 2rem;
+  }
+
+  .form-select {
+    font-size: 0.875rem;
+  }
+
+  .form-control {
+    font-size: 0.875rem;
+  }
+
+  .btn-primary {
+    font-size: 0.875rem;
+  }
+}
+
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  padding: 7rem 0;
+  color: #fff;
+}
+
+.h1-hero {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.p-hero {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 0;
+}
+
+.btn-primary:hover{
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.h2-section {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.ready, .set, .go {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+/* Add a class to show each text element */
+.show-ready, .show-set, .show-go {
+  display: block;
+}
+
+
+/* Style other content to be hidden by default */
+.other-content {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+/* Style the hidden class to hide other content */
+.hidden {
+  opacity: 0;
+}
+
+/* Remove the hidden class to show other content */
+.show-content {
+  opacity: 1;
+}
+
+.form-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.question {
+	font-size: 30px;
+}
+
+.white-text {
+	color: #fff;
+}
+
+.top-padding-small {
+	margin-top: 30px;
+}
+
+.medium-text-size {
+	font-size: 40px;
+	text-decoration: underline;
+
+}
+
+
+
+
